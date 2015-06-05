@@ -1,0 +1,17 @@
+{
+	"name": "Sticky",
+	"description": "Plugin for exposing sticky bit to admin users",
+
+	"author": "Mike Tallroth",
+	"authorEmail": "mike.tallroth@gmail.com",
+	"authorUrl": "http://github.com/miketallroth",
+
+	"dependencies": {
+		"plugins": [
+			"acl",
+			"extensions",
+			"users",
+			"migrations"
+		]
+	}
+}

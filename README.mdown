@@ -1,0 +1,26 @@
+# Sticky
+
+**Sticky** is a plugin for the Croogo CMS which provides an interface to the Nodes plugin's sticky bit. The word "Featured" is used to describe it in the Admin node editor.
+
+It is powered by the [Croogo](http://croogo.org) CMS framework.
+
+It is based on the work of [Andrew Weir](http://andrw.net/blog/term/croogo/page:3).
+
+## Requirements
+  * Croogo 2.0.0+
+
+## Installation
+
+  * cd Plugin/
+  * git clone git@gitlab.eng.plexus.com:itappdev/croogo-sticky.git Sticky
+  * In Admin dashboard, go to Extensions > Plugins, then enable the plugin.
+
+## Usage
+
+  * In the admin Node editor view, in the Publishing block, you will see a checkbox for the Featured option. When selected, this will make featured posts stay at the top of the list in the Recent Posts block.
+  * On activation, the Recent Posts block body is updated to include the Node.sticky field in the order clause.
+  * An event handler is used to inject an order before the promoted() action is called.
+
+## Links
+
+  * **Official website**: [https://github.com/miketallroth/croogo-sticky](https://github.com/miketallroth/croogo-sticky)
