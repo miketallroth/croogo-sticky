@@ -17,9 +17,8 @@ It is based on the work of [Andrew Weir](http://andrw.net/blog/term/croogo/page:
 
 ## Usage
 
-  * In the admin Node editor view, in the Publishing block, you will see a checkbox for the Featured option. When selected, this will make featured posts stay at the top of the list in the Recent Posts block.
-  * On activation, the Recent Posts block body is updated to include the Node.sticky field in the order clause.
-  * An event handler is used to inject an order before the promoted() action is called.
+  * In the admin Node editor view, in the Publishing block, you will see a checkbox for the Featured option. When selected, this will make featured posts stay at the top of the list in the Recent Posts block and any list such as term, promoted, etc. 
+  * On activation, the Recent Posts Block is copied to a new Block titled Sticky Posts which includes the Node.sticky field in the order clause. This could replace any use of Recent Posts on your site.
 
 ## Links
 
