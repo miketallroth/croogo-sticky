@@ -7,7 +7,7 @@
  * @package  Sticky
  * @author   Mike Tallroth <mike.tallroth@gmail.com>
  * @license  http://www.opensource.org/licenses/mit-license.php The MIT License
- * @link     http://github.com/miketallroth/croogo-authadapter
+ * @link     http://github.com/miketallroth/croogo-sticky
  */
 class StickyActivation {
 
@@ -25,10 +25,17 @@ class StickyActivation {
             ),
         ));
 
-        $recentBlock['Block']['body'] = '[node:recent_posts conditions="Node.type:blog" order="-(Node.sticky), Node.id DESC" limit="5"]';
+        // Create a new Block called "Sticky Posts" based on
+        // "Recent Posts" with new block body.
+        $recentBlock['Block']['id'] = null;
+        $recentBlock['Block']['title'] = 'Sticky Posts';
+        $recentBlock['Block']['alias'] = 'sticky_posts';
+        $recentBlock['Block']['body'] = '[node:sticky_posts conditions="Node.type:blog" order="-(Node.sticky), Node.id DESC" limit="5"]';
+        $recentBlock['Block']['updated'] = null;
+        $recentBlock['Block']['created'] = null;
 
         $Block->save($recentBlock);
-
+       
     }
 
     public function beforeDeactivation(Controller $controller) {
