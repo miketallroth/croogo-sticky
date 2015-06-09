@@ -59,7 +59,7 @@ $this->append('table-body');
 			</span>
 
 			<?php if ($node['Node']['sticky'] == 1): ?>
-			<span class="label label-info"><?php echo __d('croogo', 'featured'); ?></span>
+			<span class="label label-info"><?php echo __d('croogo', 'sticky'); ?></span>
 			<?php endif ?>
 
 			<?php if ($node['Node']['promote'] == 1): ?>

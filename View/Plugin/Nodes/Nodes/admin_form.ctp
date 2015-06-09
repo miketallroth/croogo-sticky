@@ -117,7 +117,7 @@ $this->start('panels');
 			'label' => __d('croogo', 'Promoted to front page'),
 		)) .
 		$this->Form->input('sticky', array(
-			'label' => __d('croogo', 'Featured (Sticky)'),
+			'label' => __d('croogo', 'Sticky'),
 		)) .
 		$this->Form->autocomplete('user_id', array(
 			'type' => 'text',

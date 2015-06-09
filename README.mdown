@@ -1,6 +1,6 @@
 # Sticky
 
-**Sticky** is a plugin for the Croogo CMS which provides an interface to the Nodes plugin's sticky bit. The word "Featured" is used to describe it in the Admin node editor.
+**Sticky** is a plugin for the Croogo CMS which provides an interface to the Nodes plugin's sticky bit.
 
 It is powered by the [Croogo](http://croogo.org) CMS framework.
 
@@ -17,8 +17,8 @@ It is based on the work of [Andrew Weir](http://andrw.net/blog/term/croogo/page:
 
 ## Usage
 
-  * In the admin Node editor view, in the Publishing block, you will see a checkbox for the Featured option. When selected, this will make featured posts stay at the top of the list in the Recent Posts block and any list such as term, promoted, etc. 
-  * On activation, the Recent Posts Block is copied to a new Block titled Sticky Posts which includes the Node.sticky field in the order clause. This could replace any use of Recent Posts on your site.
+  * In the admin Node editor view, in the Publishing block, you will see a checkbox for the Sticky option. When selected, this will make those posts stay at the top of the list in the Recent Posts block and any list such as term, promoted, etc. 
+  * On activation, the Recent Posts Block is copied to a new Block titled Sticky Posts which includes the Node.sticky field in the order clause. This could replace any use of Recent Posts on your site. Note - since block content is defined by the [node:xyz...] content within its body, any other block will need to have this sort added in order to sort sticky posts properly.
 
 ## Links
 
