@@ -30,7 +30,7 @@ class StickyActivation {
         $recentBlock['Block']['id'] = null;
         $recentBlock['Block']['title'] = 'Sticky Posts';
         $recentBlock['Block']['alias'] = 'sticky_posts';
-        $recentBlock['Block']['body'] = '[node:sticky_posts conditions="Node.type:blog" order="-(Node.sticky), Node.id DESC" limit="5"]';
+        $recentBlock['Block']['body'] = '[node:sticky_posts conditions="Node.type:blog" order="Node.sticky DESC, Node.id DESC" limit="5"]';
         $recentBlock['Block']['updated'] = null;
         $recentBlock['Block']['created'] = null;
 
