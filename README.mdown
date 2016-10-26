@@ -12,7 +12,7 @@ It is based on the work of [Andrew Weir](http://andrw.net/blog/term/croogo/page:
 ## Installation
 
   * cd Plugin/
-  * git clone git@gitlab.eng.plexus.com:itappdev/croogo-sticky.git Sticky
+  * git clone git@github.com:miketallroth/croogo-sticky.git Sticky
   * In Admin dashboard, go to Extensions > Plugins, then enable the plugin.
 
 ## Usage
